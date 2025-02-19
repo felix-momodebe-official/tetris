@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tetris-deployment
+  name: webapp-deployment
 spec:
-  replicas: 2 # You can adjust the number of replicas as needed
+  replicas: 3 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: tetris
+      app: nextcloud
   template:
     metadata:
       labels:
-        app: tetris
+        app: nextcloud
     spec:
       containers:
-        - name: tetris
-          image: nginx:stable-alpine # Replace with the actual image tag
+        - name: nextcloud
+          image: public.ecr.aws/l8l8e3n1/nextcloudapp:nextcloudappv1.1 # Replace with the actual image tag
           ports:
             - containerPort: 80 # Replace with the port your Tetris game listens on
 
