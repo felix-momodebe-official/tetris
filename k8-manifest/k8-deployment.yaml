@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: secret_sanata-deployment
+  name: sanata-deployment
 spec:
   replicas: 2 # You can adjust the number of replicas as needed
   selector:
