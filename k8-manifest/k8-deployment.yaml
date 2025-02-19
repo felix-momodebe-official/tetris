@@ -14,8 +14,8 @@ spec:
         app: sectret_sanata
     spec:
       containers:
-        - name: tetris
+        - name: secret_santa
           image: felix081/santa:latest # Replace with the actual image tag
           ports:
-            - containerPort: 80 # Replace with the port your Tetris game listens on
+            - containerPort: 8080 # Replace with the port your Tetris game listens on
 
