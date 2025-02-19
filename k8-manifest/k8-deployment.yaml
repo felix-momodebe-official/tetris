@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sanata-deployment
+  name: santa-deployment
 spec:
   replicas: 2 # You can adjust the number of replicas as needed
   selector:
@@ -14,7 +14,7 @@ spec:
         app: sectret_sanata
     spec:
       containers:
-        - name: secret_santa
+        - name: santa
           image: felix081/santa:latest # Replace with the actual image tag
           ports:
             - containerPort: 8080 # Replace with the port your Tetris game listens on
