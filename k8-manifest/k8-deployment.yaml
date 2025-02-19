@@ -7,14 +7,14 @@ spec:
   replicas: 2 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: secret_santa
+      app: secret-santa
   template:
     metadata:
       labels:
-        app: sectret_sanata
+        app: secret-santa
     spec:
       containers:
-        - name: santa
+        - name: secret-santa
           image: felix081/santa:latest # Replace with the actual image tag
           ports:
             - containerPort: 8080 # Replace with the port your Tetris game listens on
