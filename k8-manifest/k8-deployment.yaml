@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: webapp-deployment
 spec:
-  replicas: 10 # You can adjust the number of replicas as needed
+  replicas: 3 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
       app: nextcloud
